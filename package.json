@@ -1,0 +1,19 @@
+{
+  "name": "mylibrary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/budnickip/myLibrary.git"
+  },
+  "author": "Patryk Budnicki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/budnickip/myLibrary/issues"
+  },
+  "homepage": "https://github.com/budnickip/myLibrary#readme"
+}
