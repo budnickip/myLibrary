@@ -84,6 +84,16 @@
     }
 }
 
+.titleInputError, .authorInputError, .priorityInputError{
+    border: 2px solid red;
+}
+
+.titleTextError, .authorTextError, .priorityTextError{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: red;
+}
+
 @media (min-width: 1px) and (max-width: 480px) {
     .books-form::before{
         bottom: -20px;
