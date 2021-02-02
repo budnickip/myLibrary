@@ -1,0 +1,103 @@
+.books-form{
+    background-color: var(--orange, orange);
+    color: var(--whiteText, white);
+    padding: 10px;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        right: -20px;
+        top: 32px;
+        width: 40px;
+        height: 40px;
+        background-color: var(--orange, orange);
+        transform: rotate(45deg);
+    }
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 34px;
+    padding-right: 34px;
+
+    &__input, &__select{
+        color: var(--blackText, black);
+        background-color: var(--whiteBackground, white);
+        border: none;
+        border-radius: 15px;
+        font-size: 1em;
+        line-height: 25px;
+        outline: none;
+        padding: 10px;
+        margin: 8px 0px;
+
+        &:focus{
+            -webkit-box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.75);
+            box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.75);
+        }
+    }
+
+    &__priority{
+        color: var(--blackText, black);
+        background-color: var(--whiteBackground, white);
+        border: none;
+        border-radius: 15px;
+        font-size: 1em;
+        line-height: 25px;
+        outline: none;
+        padding: 10px;
+        margin: 8px 0px;
+        width: 40px;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        &:focus{
+            -webkit-box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.75);
+            box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.75);
+        }
+    }
+
+    &__button{
+        border: 1px solid var(--darkerOrange, orange);
+        border-radius: 15px;
+        padding: 14px 28px 14px 28px;
+        width: 100px;
+        background-color: var(--whiteText, white);
+        color: var(--darkerOrange, orange);
+        margin: 20px 0px;
+        align-self: flex-end;
+        cursor: pointer;
+        transition-property: background-color, color, font-weight;
+        transition-duration: .5s;
+
+        &:hover{
+            background-color:var(--darkerOrange, orange);
+            color: var(--whiteText, white);
+            font-weight: 700;
+        }
+    }
+}
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .books-form::before{
+        bottom: -20px;
+        left: 32px;
+        right: unset;
+        top: unset;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 900px){
+    .books-form::before{
+        bottom: -20px;
+        left: 32px;
+        right: unset;
+        top: unset;
+    }
+}
