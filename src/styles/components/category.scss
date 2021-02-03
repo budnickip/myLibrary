@@ -1,0 +1,36 @@
+.category-form{
+
+    &__input{
+        @extend .contact-form__input;
+    }
+
+    &__button{
+        border: 1px solid var(--orange, orange);
+        border-radius: 15px;
+        padding: 14px 28px 14px 28px;
+        width: 100px;
+        background-color: var(--whiteText, white);
+        color: var(--darkerOrange, orange);
+        margin: 20px 0px;
+        align-self: flex-end;
+        cursor: pointer;
+        transition-property: background-color, color, font-weight;
+        transition-duration: .5s;
+
+        &:hover{
+            background-color:var(--orange, orange);
+            color: var(--whiteText, white);
+            font-weight: 700;
+        }
+    }
+}
+
+.categoryInputError{
+    @extend .titleInputError;
+}
+
+.categoryTextError{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: white;
+}

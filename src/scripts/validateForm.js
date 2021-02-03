@@ -61,7 +61,7 @@ export const validatePriority = () =>{
     }
 }
 
-const createError = (className, text) =>{
+export const createError = (className, text) =>{
     let newError = document.createElement('p')
     newError.className = className
     newError.appendChild(document.createTextNode(text))

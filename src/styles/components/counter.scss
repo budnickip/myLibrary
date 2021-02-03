@@ -1,5 +1,8 @@
-.counter{
+.tools{
     padding: 2em 1em;
     background-color: var(--darkerOrange, orange);
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }

@@ -1,7 +1,5 @@
 import {validateTitle, validateAuthor, validatePriority} from './validateForm'
 import { books } from './loadBooks'
-import deleteBook from './deleteBook'
-import editBook from './editBook'
 import reloadBooks from './reloadBooks'
 
 export const addBook = () =>{
