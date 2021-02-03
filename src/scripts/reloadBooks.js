@@ -1,6 +1,7 @@
 import { books } from './loadBooks'
 import deleteBook from './deleteBook'
 import editBook from './editBook'
+import categoryCounter from './categoryCounter'
 
 const reloadBooks = () =>{
     localStorage.setItem('table', JSON.stringify(books))
@@ -20,6 +21,7 @@ const reloadBooks = () =>{
     tableBody.innerHTML = row 
     deleteBook()
     editBook()
+    categoryCounter()
 }
 
 export default reloadBooks

@@ -30,7 +30,7 @@ export const addBook = () =>{
             bookTitle.value = ''
             bookAuthor.value = ''
             bookPriority.value = 5
-            bookCategory.value = 'crime'
+            bookCategory.value = 'kryminał'
             reloadBooks()
             event.preventDefault()
            
