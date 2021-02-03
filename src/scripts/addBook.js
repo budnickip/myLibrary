@@ -1,6 +1,5 @@
 import {validateTitle, validateAuthor, validatePriority} from './validateForm'
-
-export const books = []
+import { books } from './loadBooks'
 
 export const addBook = () =>{
     const sendButton = document.querySelector('.contact-form__button')
@@ -9,9 +8,7 @@ export const addBook = () =>{
         let titleValidation = validateTitle()
         let authorValidation = validateAuthor()
         let priorityValidation = validatePriority()
-        console.log(titleValidation)
-        console.log(authorValidation)
-        console.log(priorityValidation)
+
         if(titleValidation && authorValidation && priorityValidation){
             const bookTitle = document.querySelector('#book-title')
             const bookAuthor = document.querySelector('#book-author')
@@ -29,16 +26,18 @@ export const addBook = () =>{
             bookAuthor.value = ''
             bookPriority.value = 5
             bookCategory.value = 'crime'
-            console.log(books)
-            
-            const row = `<tr class="table-body__row">
-            <td class="table-body__item">${books.length}</td>
-            <td class="table-body__item">${book.title}</td>
-            <td class="table-body__item">${book.author}</td>
-            <td class="table-body__item">${book.priority}</td>
-            <td class="table-body__item">${book.category}</td>
-            </tr>`
-            tableBody.innerHTML += row
+            localStorage.setItem('table', JSON.stringify(books));
+            let row = ''
+            books.forEach((bookItem, index) =>{
+                row += `<tr class="table-body__row">
+                <td class="table-body__item">${index+1}</td>
+                <td class="table-body__item">${bookItem.title}</td>
+                <td class="table-body__item">${bookItem.author}</td>
+                <td class="table-body__item">${bookItem.priority}</td>
+                <td class="table-body__item">${bookItem.category}</td>
+                </tr>` 
+            }) 
+            tableBody.innerHTML = row
             event.preventDefault()
         }else{
             event.preventDefault()
