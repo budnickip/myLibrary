@@ -14,13 +14,13 @@ const editBook = () =>{
             let title = `<input id="editTitle" class='editInput' value=${e.target.parentElement.parentElement.children[1].innerText}>`
             let author = `<input id="editAuthor" class='editInput' value=${e.target.parentElement.parentElement.children[2].innerText}>`
             let priority = `<input id="editPriority" class='editInput' value=${e.target.parentElement.parentElement.children[3].innerText}>`
+            let categories = JSON.parse(localStorage.getItem('categories'))
+            let categoryList = ''
+            categories.forEach(item=>{
+              categoryList += `<option value="${item}">${item}</option>`      
+            })
             let category = `<select id="editCategory" value=${e.target.parentElement.parentElement.children[4].innerText}>
-                <option value="crime">Kryminał</option>
-                <option value="sci-fi">Science Fiction</option>
-                <option value="fantasy">Fantastyka</option>
-                <option value="poetry">Poezja</option>
-                <option value="drama">Dramat</option>
-                <option value="science">Nauki ścisłe</option>
+                ${categoryList}
             </select>`
             let newButton = `<button id="save" class="save-button">zapisz</button>`
             //e.target.parentElement.parentElement.parentElement.insertBefore(newInput, e.target.parentElement.parentElement)
