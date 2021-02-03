@@ -1,4 +1,6 @@
 import { books } from './loadBooks'
+import deleteBook from './deleteBook'
+import editBook from './editBook'
 
 const reloadBooks = () =>{
     localStorage.setItem('table', JSON.stringify(books))
@@ -16,6 +18,8 @@ const reloadBooks = () =>{
                 </tr>` 
     }) 
     tableBody.innerHTML = row 
+    deleteBook()
+    editBook()
 }
 
 export default reloadBooks

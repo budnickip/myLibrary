@@ -32,8 +32,6 @@ export const addBook = () =>{
             bookPriority.value = 5
             bookCategory.value = 'crime'
             reloadBooks()
-            deleteBook()
-            editBook()
             event.preventDefault()
            
         }else{

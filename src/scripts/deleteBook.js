@@ -1,3 +1,4 @@
+import editBook from './editBook'
 import { books } from './loadBooks'
 import reloadBooks from './reloadBooks'
 
@@ -13,7 +14,6 @@ const deleteBook = () =>{
               })
 
               reloadBooks()
-              deleteBook()
         })
     })
 }
