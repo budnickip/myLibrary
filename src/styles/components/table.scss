@@ -28,6 +28,25 @@
     }
 }
 
+.edit{
+    color: var(--orange, orange);
+    cursor: pointer;
+
+    &:hover{
+        transform: translateY(-1px);
+    }
+}
+
+.delete{
+    color: var(--darkerOrange, red);
+    cursor: pointer;
+
+    &:hover{
+        transform: translateY(-1px);
+    }
+}
+
+
 @media (min-width: 1px) and (max-width: 480px) {
     .books-table{
         padding: 20px 10px 10px 10px;
