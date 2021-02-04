@@ -12,6 +12,8 @@ Możliwość dodania nowej kategorii. Nowa kategoria wyświetla się w formularz
 
 Tabela może być sortowana po kliknięciu na interesującą nas kategorię(ID, autor, priorytet, kategoria). Przy pierwszym kliknięciu tabela posortuje się rosnąco, przy kolejnym kliknięciu w tą samą kategorię posortuje się malejąco.
 
-Tabela może bić filtrowana, należy wybrać opcję  "pokaż filtry", wybrać interesujące nas ustawienia, a następnie zapisać wybrane filtry. Filtry w każdym momencie można usunąć poprzez kliknięcie przycisku "usuń filtry"
+Tabela może bić filtrowana, należy wybrać opcję  "pokaż filtry", wybrać interesujące nas ustawienia, a następnie zapisać wybrane filtry. Filtry w każdym momencie można usunąć poprzez kliknięcie przycisku "usuń filtry".
 
-Użytkownik może wydrukować tabelę klikając przycisk "drukuj"
+Użytkownik może wydrukować tabelę klikając przycisk "drukuj".
+
+Każda nowa funkcjonalność tworzona na oddzielnym branchu.
