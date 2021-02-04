@@ -10,6 +10,7 @@ import filterBooks from './scripts/filterBooks'
 import loadCategories from './scripts/loadCategories'
 import addCategory from './scripts/addCategory'
 import validateNewCategory from './scripts/validateNewCategory'
+import sortBooks from './scripts/sortBooks'
 
 loadCategories()
 loadBooks()
@@ -21,3 +22,5 @@ editBook()
 categoryCounter()
 filterBooks()
 addCategory()
+sortBooks()
+

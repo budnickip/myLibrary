@@ -39,7 +39,7 @@ const editBook = () =>{
                 if(titleValidation && authorValidation && priorityValidation){
                     copyBooks = [...books]
                     var editedBook = {
-                        index: index+1,
+                        index: e.target.parentElement.parentElement.children[0].innerHTML,
                         title: document.querySelector('#editTitle').value,
                         author: document.querySelector('#editAuthor').value,
                         priority: document.querySelector('#editPriority').value,

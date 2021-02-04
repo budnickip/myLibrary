@@ -8,7 +8,7 @@ export const addBook = () =>{
         let titleValidation = validateTitle()
         let authorValidation = validateAuthor()
         let priorityValidation = validatePriority()
-
+        let counter = JSON.parse(localStorage.getItem('counter')) || 1
         if(titleValidation && authorValidation && priorityValidation){
             const bookTitle = document.querySelector('#book-title')
             const bookAuthor = document.querySelector('#book-author')
@@ -16,7 +16,7 @@ export const addBook = () =>{
             const bookCategory = document.querySelector('#book-category')
             
             let book = {
-                        index: books.length+1,
+                        index: counter,
                         title: bookTitle.value,
                         author: bookAuthor.value,
                         priority: bookPriority.value,
@@ -24,6 +24,8 @@ export const addBook = () =>{
                         edit: `<span class="edit fas fa-pen"></span>`,
                         delete: `<span class="delete fas fa-minus-circle"></span>`
                     }
+            counter++
+            localStorage.setItem('counter', JSON.stringify(counter))
             books.push(book)
             bookTitle.value = ''
             bookAuthor.value = ''
