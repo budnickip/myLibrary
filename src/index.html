@@ -44,20 +44,23 @@
                 <button class="books-filter__button" id="delete-filters">Usuń filtry</button>
             </div>
             <p class="books-table__paragraph">Aby posortować tabele kliknij w jej nagłówku na wartość względem której ma być sortowana.</p>
-            <table class="table" cellspacing="0" cellpadding="0">
-                <thead class="table-header">
-                    <tr class="table-header__row">
-                        <th class="table-header__item header-touch" id="books-id">ID</th>
-                        <th class="table-header__item" id="books-title">Tytuł</th>
-                        <th class="table-header__item header-touch" id="books-author">Autor</th>
-                        <th class="table-header__item header-touch" id="books-priority">Priorytet</th>
-                        <th class="table-header__item header-touch" id="books-category">Kategoria</th>
-                    </tr>
-                </thead>
-                <tbody class="table-body">
-    
-                </tbody>
-            </table>
+            <div id="print-div" class="table">
+                <table cellspacing="0" cellpadding="0">
+                    <thead class="table-header">
+                        <tr class="table-header__row">
+                            <th class="table-header__item header-touch" id="books-id">ID</th>
+                            <th class="table-header__item" id="books-title">Tytuł</th>
+                            <th class="table-header__item header-touch" id="books-author">Autor</th>
+                            <th class="table-header__item header-touch" id="books-priority">Priorytet</th>
+                            <th class="table-header__item header-touch" id="books-category">Kategoria</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+        
+                    </tbody>
+                </table>
+            </div>
+            <button class="books-table__button" id="print">Drukuj</button>
         </div>
     </section>
     <section class="tools">

@@ -11,6 +11,7 @@ import loadCategories from './scripts/loadCategories'
 import addCategory from './scripts/addCategory'
 import validateNewCategory from './scripts/validateNewCategory'
 import sortBooks from './scripts/sortBooks'
+import pdfTable from './scripts/pdfTable'
 
 loadCategories()
 loadBooks()
@@ -23,4 +24,5 @@ categoryCounter()
 filterBooks()
 addCategory()
 sortBooks()
+pdfTable()
 

@@ -9,6 +9,15 @@
     &__paragraph{
         margin-top: 1em;
     }
+
+    &__button{
+        @extend .contact-form__button;
+        width: auto;
+        &:hover{
+            font-weight: unset;
+        }
+        margin: 5px;
+    }
 }
 
 
