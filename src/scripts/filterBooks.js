@@ -2,9 +2,10 @@ import { books } from './loadBooks'
 
 const filterBooks = () =>{
     const crime = document.querySelector('#category-filter')
+    const filterSelect = document.querySelector('.books-filter__select');
     crime.addEventListener("click", ()=>{
         let tempBooks = books.filter(book=>{
-            return book.category === "kryminał"
+            return book.category === filterSelect.value
         })
         const tableBody = document.querySelector('.table-body')
         let row = ''
