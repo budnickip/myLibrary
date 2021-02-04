@@ -33,8 +33,15 @@
         </div>
         <div class="books-table">
             <div class="books-filter">
-                <button id="category-filter">Zastosuj</button>
-                <select class="books-filter__select"></select>
+                <button class="books-filter__button" id="show-filters">Pokaż filtry</button>
+                <div class="books-filters">
+                    <button class="books-filter__button" id="book-filter">Zastosuj</button>
+                    <select class="books-filter__select"></select>
+                    <input id="books-filter__author" class="books-filter__input" type="text" name="filter-author" placeholder="Autor">
+                    <label for="books-filter__priority">Priorytet&nbsp;przeczytania[1-5]</label>
+                    <input id="books-filter__priority" class="books-filter__priority" type="number" name="books-filter__priority">
+                </div>
+                <button class="books-filter__button" id="delete-filters">Usuń filtry</button>
             </div>
             <table class="table" cellspacing="0" cellpadding="0">
                 <thead class="table-header">

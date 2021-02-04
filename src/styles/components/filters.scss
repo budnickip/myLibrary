@@ -1,0 +1,28 @@
+.books-filter{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    &__button{
+        @extend .contact-form__button;
+        width: auto;
+        &:hover{
+            font-weight: unset;
+        }
+        margin: 5px;
+    }
+    &__select{
+        @extend .contact-form__select;
+    }
+    &__input{
+        @extend .contact-form__input;
+        padding: 8px 10px;
+    }
+    &__priority{
+        @extend .contact-form__priority;
+        padding: 8px 10px;
+    }
+}
+
+.books-filters{
+    display: none;
+}
