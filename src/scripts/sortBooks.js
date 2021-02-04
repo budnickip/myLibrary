@@ -7,23 +7,15 @@ const sortBooks = () =>{
     const sortCategory = document.querySelector('#books-category')
     const sortID = document.querySelector('#books-id')
 
-    const dynamicSort = (property) =>{
-        var sortOrder = 1;
-        if(property[0] === "-") {
-            sortOrder = -1;
-            property = property.substr(1);
-        }
-        return (a,b) => {
-            /* next line works with strings and numbers, 
-             * and you may want to customize it to your needs
-             */
-            var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
-            return result * sortOrder;
-        }
-    }
-
     sortAuthor.addEventListener("click", ()=>{
-       let direction = -1;
+        let direction;
+        if(sortAuthor.classList.contains('sorted')){
+            direction = -1
+            sortAuthor.classList.remove('sorted')
+        }else{
+            sortAuthor.classList.add('sorted')
+                direction = 1   
+        }
        function compare(a, b) {
             if (a.author.toLowerCase() < b.author.toLowerCase()){
               return -1*direction;
@@ -39,12 +31,20 @@ const sortBooks = () =>{
     }) 
 
     sortPriority.addEventListener("click", ()=>{
+        let direction;
+        if(sortPriority.classList.contains('sorted')){
+            direction = -1
+            sortPriority.classList.remove('sorted')
+        }else{
+            sortPriority.classList.add('sorted')
+                direction = 1   
+        }
         function compare(a, b) {
             if (a.priority < b.priority){
-              return -1;
+              return -1*direction;
             }
             if (a.priority > b.priority){
-              return 1;
+              return 1*direction;
             }
             return 0;
           }
@@ -54,12 +54,20 @@ const sortBooks = () =>{
     })
 
     sortCategory.addEventListener("click", ()=>{
+        let direction;
+        if(sortCategory.classList.contains('sorted')){
+            direction = -1
+            sortCategory.classList.remove('sorted')
+        }else{
+            sortCategory.classList.add('sorted')
+                direction = 1   
+        }
         function compare(a, b) {
             if (a.category.toLowerCase() < b.category.toLowerCase()){
-              return -1;
+              return -1*direction;
             }
             if (a.category.toLowerCase() > b.category.toLowerCase()){
-              return 1;
+              return 1*direction;
             }
             return 0;
           }
@@ -69,17 +77,26 @@ const sortBooks = () =>{
     })
 
     sortID.addEventListener("click", ()=>{
+        let direction;
+        if(sortID.classList.contains('sorted')){
+            direction = -1
+            sortID.classList.remove('sorted')
+        }else{
+            sortID.classList.add('sorted')
+                direction = 1   
+        }
         const compare = (a, b) => {
             if (a.index < b.index){
-              return -1;
+              return -1*direction;
             }
             if(a.index > b.index){
-              return 1;
+              return 1*direction;
             }
             return 0;
           }
           
-        books.sort( compare );
+        books.sort(compare)
+        reloadBooks()
     })
 }
 
