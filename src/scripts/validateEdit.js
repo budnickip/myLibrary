@@ -24,7 +24,7 @@ export const validateEditTitle = () =>{
 
 export const validateEditAuthor = () =>{
     const author = document.querySelector('#editAuthor')
-    const regex = /\w{3,}/g;
+    const regex = /[AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]{3,}/g
 
     if(!regex.test(author.value) || author.value.length == 0){
         if(!author.classList.contains('authorInputError')){

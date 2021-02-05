@@ -8,21 +8,18 @@ const editBook = () =>{
     let copyBooks = []
     editIcons.forEach(item =>{
         item.addEventListener('click', (e)=>{
-
-            //var newInput = document.createElement('input')
-            let title = `<input id="editTitle" class='editInput' value=${e.target.parentElement.parentElement.children[1].innerText}>`
-            let author = `<input id="editAuthor" class='editInput' value=${e.target.parentElement.parentElement.children[2].innerText}>`
-            let priority = `<input id="editPriority" class='editInput' value=${e.target.parentElement.parentElement.children[3].innerText}>`
+            let title = `<input id="editTitle" class='editInput' value="${e.target.parentElement.parentElement.children[1].innerText}">`
+            let author = `<input id="editAuthor" class='editInput' value="${e.target.parentElement.parentElement.children[2].innerText}">`
+            let priority = `<input id="editPriority" class='editInput' value="${e.target.parentElement.parentElement.children[3].innerText}">`
             let categories = JSON.parse(localStorage.getItem('categories'))
             let categoryList = ''
             categories.forEach(item=>{
               categoryList += `<option value="${item}">${item}</option>`      
             })
-            let category = `<select id="editCategory" value=${e.target.parentElement.parentElement.children[4].innerText}>
+            let category = `<select id="editCategory" value="${e.target.parentElement.parentElement.children[4].innerText}">
                 ${categoryList}
             </select>`
             let newButton = `<button id="save" class="save-button">zapisz</button>`
-            //e.target.parentElement.parentElement.parentElement.insertBefore(newInput, e.target.parentElement.parentElement)
             e.target.parentElement.parentElement.children[1].innerHTML = title
             e.target.parentElement.parentElement.children[2].innerHTML = author
             e.target.parentElement.parentElement.children[3].innerHTML = priority
@@ -46,7 +43,6 @@ const editBook = () =>{
                         edit: `<span class="edit fas fa-pen"></span>`,
                         delete: `<span class="delete fas fa-minus-circle"></span>`
                     }
-                    console.log(editedBook.index-1)
                     copyBooks[editedBook.index-1]=editedBook
                    
                     books.length = 0;

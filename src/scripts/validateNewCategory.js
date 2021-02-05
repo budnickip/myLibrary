@@ -8,7 +8,7 @@ const validateNewCategory = () =>{
 
 export const validateMyCategory = () =>{
     const category = document.querySelector('.category-form__input')
-    const regex = /\w{3,}/g;
+    const regex = /[AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]{3,}/g
 
     if(!regex.test(category.value) || category.value.length == 0){
         if(!category.classList.contains('categoryInputError')){

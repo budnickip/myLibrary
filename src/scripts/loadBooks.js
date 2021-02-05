@@ -11,10 +11,10 @@ const loadBooks = () =>{
           return 1;
         }
         return 0;
-      }
+    }
       
-    books.sort( compare );
-    books.forEach((bookItem, index) =>{
+    books.sort(compare);
+    books.forEach(bookItem =>{
         row += `<tr class="table-body__row" draggable="true">
         <td class="table-body__item">${bookItem.index}</td>
         <td class="table-body__item">${bookItem.title}</td>

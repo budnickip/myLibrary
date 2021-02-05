@@ -11,11 +11,19 @@
 
 @media (min-width: 1px) and (max-width: 480px) {
     .books{
+        width: 96%;
         grid-template-rows: unset;
         grid-template-columns: 100%;
     }
 }
 
+@media (min-width: 418px) and (max-width: 768px){
+    .books{
+        width: 96%;
+        grid-template-rows: unset;
+        grid-template-columns: 100%;
+    }
+}
 @media (min-width: 481px) and (max-width: 900px){
     .books{
         grid-template-rows: unset;

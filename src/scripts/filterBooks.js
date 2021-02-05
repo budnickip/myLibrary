@@ -50,7 +50,7 @@ const filterBooks = () =>{
         if(tempBooks) {
             const tableBody = document.querySelector('.table-body')
             let row = ''
-            tempBooks.forEach((bookItem, index) =>{
+            tempBooks.forEach(bookItem =>{
                 row += `<tr class="table-body__row">
                 <td class="table-body__item">${bookItem.index}</td>
                 <td class="table-body__item">${bookItem.title}</td>

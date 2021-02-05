@@ -8,7 +8,7 @@ const reloadBooks = () =>{
     localStorage.setItem('table', JSON.stringify(books))
     const tableBody = document.querySelector('.table-body')
     let row = ''
-    books.forEach((bookItem, index) =>{
+    books.forEach(bookItem =>{
         row += `<tr class="table-body__row" draggable="true">
                 <td class="table-body__item">${bookItem.index}</td>
                 <td class="table-body__item">${bookItem.title}</td>

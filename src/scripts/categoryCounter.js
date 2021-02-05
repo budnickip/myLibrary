@@ -15,6 +15,7 @@ const categoryCounter = () =>{
     counter.forEach(category => {
         paragraph += `<p>${category.category}: <span class="counter-crime">${category.count}</span></p>`
     })
+    paragraph += `<h3>Ilość dodanych książek:</h3><p>${books.length}</p>`
     counterDiv.innerHTML = paragraph
 }
 

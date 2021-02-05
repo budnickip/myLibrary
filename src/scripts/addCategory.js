@@ -1,5 +1,4 @@
 import categoryCounter from './categoryCounter'
-import validateNewCategory from './validateNewCategory'
 import { validateMyCategory } from './validateNewCategory'
 
 const addCategory = () =>{
