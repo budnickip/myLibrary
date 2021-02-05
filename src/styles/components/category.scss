@@ -1,5 +1,4 @@
 .category-form{
-
     &__input{
         @extend .contact-form__input;
     }
@@ -23,6 +22,10 @@
             font-weight: 700;
         }
     }
+}
+
+.new-category{
+    margin: 1em;
 }
 
 .categoryInputError{

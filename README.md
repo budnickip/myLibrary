@@ -16,7 +16,7 @@ Tabela może być filtrowana, należy wybrać opcję  "pokaż filtry", wybrać i
 
 Użytkownik może wydrukować tabelę klikając przycisk "drukuj".
 
-Drag & drop książki - książki można sortować poprzez przeciąganie myszką(lub palcem na urządzeniach dotykowych) i upuszczanie w dowolnej pozycji w tabeli.
+Drag & drop książki - książki można sortować poprzez przeciąganie myszką i upuszczanie w dowolnej pozycji w tabeli.
 
 Jeśli użytkownik dodał jakieś książki, to przy każdym odpaleniu przeglądarki zostanę one automatycznie wczytane i posortowane względem dodania(od najstarszej, do najnowszej)
 
