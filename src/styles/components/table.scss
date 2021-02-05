@@ -52,6 +52,10 @@
             background-color: var(--grey, grey);
             border-color:  var(--grey, grey);
         }
+        cursor: move;
+        &.dragging{
+            opacity: .5;
+        }
     }
     
     &__item{

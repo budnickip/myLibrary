@@ -12,6 +12,7 @@ import addCategory from './scripts/addCategory'
 import validateNewCategory from './scripts/validateNewCategory'
 import sortBooks from './scripts/sortBooks'
 import pdfTable from './scripts/pdfTable'
+import dragBook from './scripts/dragBook'
 
 loadCategories()
 loadBooks()
@@ -25,4 +26,5 @@ filterBooks()
 addCategory()
 sortBooks()
 pdfTable()
+dragBook()
 
