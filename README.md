@@ -2,6 +2,12 @@
 
 live: https://budnickip.github.io/myLibrary/
 
+Widok na urządzeniach desktopowych:
+![./.github/images/desktop.png](./.github/images/desktop.png)
+
+Widok na urządzeniach mobilnych:
+![./.github/images/mobile.png](./.github/images/mobile.png)
+
 Możliwość dodawania książek za pomocą formularza - przed dodaniem następuje walidacja, tytuł książki musi mieć conajmniej 1 znak, autor książki musi mieć conajmniej 3 znaki oraz priorytet przeczytania musi być liczbą od 1 do 5.
 
 W przypadku wprowadzenia wartości niespełniających walidację, użytkownik otrzyma odpowiedni komunikat, a pole zawierające błąd zaświeci się na czerwono oraz książka nie zostanie dodana.
