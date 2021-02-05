@@ -1,5 +1,4 @@
 import { books } from './loadBooks'
-import deleteBook from './deleteBook'
 import reloadBooks from './reloadBooks'
 import {validateEditTitle, validateEditAuthor, validateEditPriority} from './validateEdit'
 import validateEdit from './validateEdit'
@@ -7,7 +6,7 @@ import validateEdit from './validateEdit'
 const editBook = () =>{
     const editIcons = [...document.querySelectorAll('.edit')]
     let copyBooks = []
-    editIcons.forEach((item, index) =>{
+    editIcons.forEach(item =>{
         item.addEventListener('click', (e)=>{
 
             //var newInput = document.createElement('input')
@@ -47,7 +46,8 @@ const editBook = () =>{
                         edit: `<span class="edit fas fa-pen"></span>`,
                         delete: `<span class="delete fas fa-minus-circle"></span>`
                     }
-                    copyBooks[index]=editedBook
+                    console.log(editedBook.index-1)
+                    copyBooks[editedBook.index-1]=editedBook
                    
                     books.length = 0;
                     copyBooks.forEach(item =>{
