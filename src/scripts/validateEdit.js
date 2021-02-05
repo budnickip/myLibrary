@@ -3,9 +3,9 @@ const validateEdit = () =>{
     const author = document.querySelector('#editAuthor') 
     const priority = document.querySelector('#editPriority')
 
-    title && title.addEventListener('change', validateEditTitle)
-    author && author.addEventListener('change', validateEditAuthor)
-    priority && priority.addEventListener('change', validateEditPriority)
+    title && title.addEventListener('keyup', validateEditTitle)
+    author && author.addEventListener('keyup', validateEditAuthor)
+    priority && priority.addEventListener('keyup', validateEditPriority)
 }
 
 export const validateEditTitle = () =>{

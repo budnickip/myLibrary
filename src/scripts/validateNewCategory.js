@@ -3,7 +3,7 @@ import { createError } from './validateForm'
 const validateNewCategory = () =>{
     const category = document.querySelector('.category-form__input')
 
-    category.addEventListener('change', validateMyCategory)
+    category.addEventListener('keyup', validateMyCategory)
 }
 
 export const validateMyCategory = () =>{

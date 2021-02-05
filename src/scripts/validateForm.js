@@ -3,9 +3,9 @@ const validateForm = () =>{
     const author = document.querySelector('#book-author')
     const priority = document.querySelector('#book-priority')
 
-    title.addEventListener('change', validateTitle)
-    author.addEventListener('change', validateAuthor)
-    priority.addEventListener('change', validatePriority)
+    title.addEventListener('keyup', validateTitle)
+    author.addEventListener('keyup', validateAuthor)
+    priority.addEventListener('keyup', validatePriority)
 }
 
 export const validateTitle = () =>{
