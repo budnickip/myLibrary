@@ -11,11 +11,11 @@ const categoryCounter = () =>{
     })
 
     const counterDiv = document.querySelector('.counter')
-    let paragraph = '<h3>Licznik książek z danej kategorii</h3>'
+    let paragraph = '<h3 class="counter__header">Licznik książek z danej kategorii:</h3>'
     counter.forEach(category => {
-        paragraph += `<p>${category.category}: <span class="counter-crime">${category.count}</span></p>`
+        paragraph += `<p class="counter__paragraph">${category.category}: <span class="counter-crime">${category.count}</span></p>`
     })
-    paragraph += `<h3>Ilość dodanych książek:</h3><p>${books.length}</p>`
+    paragraph += `<h3 class="counter__header">Ilość dodanych książek:</h3><p class="counter__paragraph">${books.length}</p>`
     counterDiv.innerHTML = paragraph
 }
 

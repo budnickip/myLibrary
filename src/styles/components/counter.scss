@@ -8,5 +8,11 @@
 }
 
 .counter{
-    margin: 1em;
+    &__header{
+        margin: 1em 1em 1em 0em;
+    }
+
+    &__paragraph{
+        margin-left: .5em;
+    }
 }
